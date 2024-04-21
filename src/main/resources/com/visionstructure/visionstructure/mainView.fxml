@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visionstructure.visionstructure.MainView">
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+        <HBox.margin>
+            <Insets />
+        </HBox.margin>
+      <children>
+         <Label alignment="CENTER" cache="true" centerShape="false" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="157.0" layoutY="51.0" prefHeight="81.0" prefWidth="259.0" text="Выбор команд для распознавания" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+            <font>
+               <Font name="Tahoma Bold" size="20.0" />
+            </font>
+         </Label>
+         <Button fx:id="buttonSelect" layoutX="440.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Выбрать" />
+         <Label layoutX="38.0" layoutY="164.0" prefHeight="25.0" prefWidth="364.0" text="Перевод изображения в другое цветовое пространство" textOverrun="CLIP" wrapText="true">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="38.0" layoutY="216.0" prefHeight="17.0" prefWidth="364.0" text="Настройка изображения под определённый цвет">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Button fx:id="buttonSettings" layoutX="440.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Настроить" />
+      </children>
+    </AnchorPane>
+    <SplitPane fx:id="imagePane" dividerPositions="0.5" orientation="VERTICAL" prefHeight="720.0" prefWidth="348.0" HBox.hgrow="ALWAYS">
+        <ImageView fx:id="imageTwo" />
+        <ImageView fx:id="imageOne" />
+    </SplitPane>
+</HBox>

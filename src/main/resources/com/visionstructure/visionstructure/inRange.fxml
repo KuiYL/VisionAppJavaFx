@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visionstructure.visionstructure.InRange">
+    <Label layoutX="38.0" layoutY="44.0" text="Настройка изображения под определённый цвет">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <Button layoutX="238.0" layoutY="310.0" mnemonicParsing="false" text="Сохранить">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+   <Slider layoutX="128.0" layoutY="148.0" />
+   <Slider layoutX="128.0" layoutY="193.0" />
+   <Slider layoutX="128.0" layoutY="238.0" />
+   <Slider layoutX="320.0" layoutY="148.0" />
+   <Slider layoutX="320.0" layoutY="193.0" />
+   <Slider layoutX="320.0" layoutY="238.0" />
+</AnchorPane>
